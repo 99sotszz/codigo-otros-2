@@ -1,3 +1,8 @@
+
+<!-- intente ponerles nombres masapropiados o especificos a als variables, el script estaba mal enlazado
+el submito no estaba sirviendo -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +17,11 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+  <form class="formulario" id="form">
+
+    <label>Nombre</label> <input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    <label>Edad</label> <input type="number" name="age" id="age">
     <br />
 
     Nacionalidad
@@ -26,15 +32,15 @@
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
-    <input type="submit">
+    <input onclick="crearElemento" type="submit">
   </form>
 
   <div>
-    <h2>Lista de invitados</h2>
+    <h2 id="lista-de-invitados">Lista de invitados</h2>
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="./formulario.js"></script>
 </body>
 
 </html>

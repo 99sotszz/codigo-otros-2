@@ -67,16 +67,8 @@ elementoLista.appendChild(spanNombre)
 elementoLista.appendChild(inputNombre)
 elementoLista.appendChild(espacio)
 
-function crearElemento(descripcion, valor) {
-var spanNombre = document.createElement("span")
-var inputNombre = document.createElement("input")
-var espacio = document.createElement("br")
-spanNombre.textContent = descripcion + ": "
-inputNombre.value = valor 
-elementoLista.appendChild(spanNombre)
-elementoLista.appendChild(inputNombre)
-elementoLista.appendChild(espacio)
-}
+
+  }
 
 crearElemento("Nombre", nombre)
 crearElemento("Edad", edad)
@@ -94,4 +86,3 @@ elementoLista.appendChild(botonBorrar);
 // this.parentNode.style.display = 'none';
 botonBorrar.parentNode.remove()
   }
-}
